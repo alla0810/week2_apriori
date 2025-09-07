@@ -41,4 +41,11 @@ jupyter notebook
 
 - Code is written to be extendable for other datasets
 
+- **Absolute support** is now used directly to avoid rounding errors.  
+  - If `min_sup_rel` is provided, it is converted with `ceil(min_sup_rel * N)` so that borderline itemsets are not excluded.
+  - This ensures no frequent pattern is lost due to truncation.
+- Each transaction is cleaned:
+  - Duplicate items within a transaction are removed
+  - Items are sorted for consistent ordering
+
 © 2025 by KyoSook Shin
