@@ -17,3 +17,28 @@ This repository contains the implementation of the **Apriori algorithm** for the
 Install requirements in a virtual environment:
 ```bash
 pip install -r requirements.txt
+```
+
+## How to Run
+1. Activate the virtual environment
+
+2. Start Jupyter Notebook:
+```bash
+jupyter notebook
+```
+
+3. Open week2_apriori.ipynb and run the cells
+
+4. The algorithm will generate:
+
+- part1.txt
+
+- part2.txt
+
+## Notes
+
+- Minimum support threshold is set to 1% of transactions (absolute count used in output)
+
+- Code is written to be extendable for other datasets
+
+© 2025 by KyoSook Shin
